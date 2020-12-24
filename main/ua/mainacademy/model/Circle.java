@@ -1,6 +1,7 @@
 package main.ua.mainacademy.model;
 
 public class Circle implements Shape {
+
     private final double radius;
 
     public Circle(double radius) {

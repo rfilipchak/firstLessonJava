@@ -1,6 +1,7 @@
 package main.ua.mainacademy.model;
 
 public class Square implements Shape {
+
     private double side;
 
     public Square(double side) {

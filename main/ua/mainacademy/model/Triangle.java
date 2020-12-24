@@ -2,23 +2,17 @@ package main.ua.mainacademy.model;
 
 public class Triangle implements Shape {
 
-    private final double sideA;
-    private final double sideB;
-    private final double sideC;
+    private final double base;
+    private final double height;
 
-    public Triangle(double sideA, double sideB, double sideC) {
-        this.sideA = sideA;
-        this.sideB = sideB;
-        this.sideC = sideC;
+    public Triangle(double base, double height) {
+        this.base = base;
+        this.height = height;
     }
 
     @Override
     public double getArea() {
-        double halfPerimeter = getHalfPerimeter(sideA, sideB, sideC);
-        return Math.sqrt(halfPerimeter * (halfPerimeter - sideA) * (halfPerimeter - sideB) * (halfPerimeter - sideC));
+        return (base * height) / 2;
     }
 
-    private double getHalfPerimeter(double sideA, double sideB, double sideC) {
-        return (sideA + sideB + sideC) / 2;
-    }
 }
